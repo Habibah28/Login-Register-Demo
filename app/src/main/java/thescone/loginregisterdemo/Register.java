@@ -11,7 +11,6 @@ import java.util.HashMap;
  * Created by Habibah on 31-Jan-17.
  */
 public class Register extends AsyncTask<String, Void, String> {
-    ProgressDialog loading;
     RegisterUserClass ruc = new RegisterUserClass();
 
     public interface RegisterResponse {
@@ -31,6 +30,13 @@ public class Register extends AsyncTask<String, Void, String> {
 
     @Override
     protected String doInBackground(String... params) {
+
+        // TODO: Send data to PHP
+        /***
+         * - The four strings (name, username, password and email) come from MainActivity
+         * - The variable name for these four is intentionally same with column name in database and variable name in PHP,
+         *      so that no silly mistakes will be made
+         */
 
         HashMap<String, String> data = new HashMap<String,String>();
         data.put("name",params[0]);

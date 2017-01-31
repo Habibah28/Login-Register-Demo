@@ -16,4 +16,23 @@
         android:text="Large Text"
         android:id="@+id/textView" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Project file"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="https://github.com/Habibah28/Login-Register-Demo/tree/master"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:autoLink="web" />
+
 </RelativeLayout>

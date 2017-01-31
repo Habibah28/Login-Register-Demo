@@ -19,6 +19,8 @@ import javax.net.ssl.HttpsURLConnection;
  */
 public class RegisterUserClass {
 
+    // TODO: This class is for handling HttpURLConnection. DO NOT MODIFY.
+
     public String sendPostRequest(String requestURL,
                                   HashMap<String, String> postDataParams) {
 
